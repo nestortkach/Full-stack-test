@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "docker:up": "docker-compose up -d",
+    "prisma:setup": "npx prisma migrate dev && npx prisma generate",
+    "dev": "node src/server.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "prisma": "^5.21.1"
+  }
+}
